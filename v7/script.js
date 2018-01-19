@@ -69,3 +69,14 @@ var myObject = {
     }
 }
 
+
+var displayMyList = document.getElementById('displayMyList');
+displayMyList.addEventListener('click',function(){
+  myObject.displayList();
+});
+
+var toggleMyList =  document.getElementById('toggleMyList');
+toggleMyList.addEventListener('click',function(){
+  myObject.toggleAll();
+});
+
