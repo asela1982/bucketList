@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bucket List</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>Bucket List</h1>
+
+    <div>
+        <button onclick="handlers.toggleAll()">Toggle</button>
+    </div>
+
+    <div>
+        <button onclick="handlers.addItem()">Add</button>
+        <input id="addItemTextInput" type="text">
+    </div>
+
+
+    <div>
+        <button onclick="handlers.deleteItem()">Delete</button>
+        <input id="deleteItemPositionInput" type="number">
+    </div>
+
+    <div>
+        <button onclick="handlers.changeItem()">Change</button>
+        <input id="changeItemPositionInput" type="number">
+        <input id="changeItemTextInput" type="text">
+    </div>
+
+
+    <div>
+            <button onclick="handlers.toggleItem()">Toggle Completed</button>
+            <input id="toggleItemPositionInput" type="number">
+    </div>
+
+    <ul>   
+    </ul>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
